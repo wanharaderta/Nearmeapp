@@ -13,6 +13,7 @@
 		83737C7224A0FCB90046CBCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83737C7124A0FCB90046CBCF /* Assets.xcassets */; };
 		83737C7524A0FCB90046CBCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83737C7424A0FCB90046CBCF /* Preview Assets.xcassets */; };
 		83737C7824A0FCB90046CBCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83737C7624A0FCB90046CBCF /* LaunchScreen.storyboard */; };
+		83737C8224A10D6C0046CBCF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83737C8124A10D6B0046CBCF /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		83737C7424A0FCB90046CBCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83737C7724A0FCB90046CBCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83737C7924A0FCB90046CBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83737C8124A10D6B0046CBCF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		83737C6A24A0FCB50046CBCF /* NearMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				83737C7F24A0FE680046CBCF /* Views */,
 				83737C6B24A0FCB50046CBCF /* AppDelegate.swift */,
 				83737C6D24A0FCB50046CBCF /* SceneDelegate.swift */,
 				83737C6F24A0FCB50046CBCF /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				83737C7424A0FCB90046CBCF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83737C7F24A0FE680046CBCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83737C8124A10D6B0046CBCF /* MapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83737C6C24A0FCB50046CBCF /* AppDelegate.swift in Sources */,
+				83737C8224A10D6C0046CBCF /* MapView.swift in Sources */,
 				83737C6E24A0FCB50046CBCF /* SceneDelegate.swift in Sources */,
 				83737C7024A0FCB50046CBCF /* ContentView.swift in Sources */,
 			);

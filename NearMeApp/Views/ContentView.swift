@@ -14,7 +14,7 @@ struct ContentView: View {
     @ObservedObject private var locationManager = LocationManager()
     @State private var search: String = ""
     @State private var landmarks = [Lankmark]()
-    
+    @State private var tapped: Bool = false
     private func getNearByLandmarks(){
         
         guard let location = self.locationManager.location else {
@@ -39,6 +39,16 @@ struct ContentView: View {
         }
     }
     
+    func calculateOffset() -> CGFloat {
+        if self.landmarks.count > 0 && !self.tapped {
+            return UIScreen.main.bounds.height - UIScreen.main.bounds.height / 4
+        } else if self.tapped{
+            return 100
+        } else {
+            return UIScreen.main.bounds.height
+        }
+    }
+    
     var body: some View {
         
         ZStack(alignment: .top) {
@@ -50,6 +60,10 @@ struct ContentView: View {
             }.textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
             .offset(y: 44)
+            
+            PlaceListView(landmarks: self.landmarks){
+                self.tapped.toggle()
+            }.offset(y: calculateOffset())
         }
         
     }

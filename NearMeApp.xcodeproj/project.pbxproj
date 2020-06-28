@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8320876A24A8DDA900312ED5 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320876924A8DDA900312ED5 /* PlaceListView.swift */; };
 		83737C6C24A0FCB50046CBCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83737C6B24A0FCB50046CBCF /* AppDelegate.swift */; };
 		83737C6E24A0FCB50046CBCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83737C6D24A0FCB50046CBCF /* SceneDelegate.swift */; };
 		83737C7024A0FCB50046CBCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83737C6F24A0FCB50046CBCF /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8320876924A8DDA900312ED5 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		83737C6824A0FCB50046CBCF /* NearMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83737C6B24A0FCB50046CBCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83737C6D24A0FCB50046CBCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				83737C6F24A0FCB50046CBCF /* ContentView.swift */,
 				83737C8124A10D6B0046CBCF /* MapView.swift */,
+				8320876924A8DDA900312ED5 /* PlaceListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				83B2F7E824A63DD400D943A0 /* LandmarkAnnotation.swift in Sources */,
 				83B2F7E624A63BD800D943A0 /* Landmark.swift in Sources */,
 				83737C6C24A0FCB50046CBCF /* AppDelegate.swift in Sources */,
+				8320876A24A8DDA900312ED5 /* PlaceListView.swift in Sources */,
 				83737C8224A10D6C0046CBCF /* MapView.swift in Sources */,
 				83737C8824A111CE0046CBCF /* LocationManager.swift in Sources */,
 				83737C8524A110560046CBCF /* Coordinator.swift in Sources */,

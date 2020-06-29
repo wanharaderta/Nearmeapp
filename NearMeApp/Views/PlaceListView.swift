@@ -26,8 +26,8 @@ struct PlaceListView: View {
             
             List(self.landmarks, id: \.id) { lankmark in
                 Text(lankmark.name)
-            }
-        }
+            }.animation(nil)
+        }.cornerRadius(16)
     }
 }
 

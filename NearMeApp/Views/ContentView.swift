@@ -11,7 +11,8 @@ import MapKit
 
 struct ContentView: View {
     
-    @ObservedObject private var locationManager = LocationManager()
+    //@ObservedObject private var locationManager = LocationManager()
+    private var locationManager = LocationManager()
     @State private var search: String = ""
     @State private var landmarks = [Lankmark]()
     @State private var tapped: Bool = false
@@ -64,6 +65,7 @@ struct ContentView: View {
             PlaceListView(landmarks: self.landmarks){
                 self.tapped.toggle()
             }.offset(y: calculateOffset())
+            .animation(.spring())
         }
         
     }
